@@ -59,10 +59,8 @@ function! <SID>AfterColorsScript()
 	if exists('g:colors_name') && strlen(g:colors_name)
 		" allow two places to store after/colors scripts
 		execute 'runtime! after/colors/' . g:colors_name . '.vim'
-		execute 'runtime! after_colors/' . g:colors_name . '.vim'
 
 		" allow global colors in 'common.vim'
 		execute 'runtime! after/colors/common.vim'
-		execute 'runtime! after_colors/common.vim'
 	endif
 endfunction

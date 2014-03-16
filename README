@@ -19,6 +19,3 @@ On windows you would create:
 -- VERSION 6 WARNING --
 If your Vim is older than version 7, then the after/colors scripts will only be loaded once when Vim starts.  This will not be a problem if you choose your colorscheme in your .vimrc file, but if you change your colorscheme after vim has loaded then your after/colors scripts will be ignored.  This is not an issue in Vim 7.
 
-
-In case of problems, you can email me: <toomuchphp-vim at yahoo.com>
-
