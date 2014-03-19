@@ -9,12 +9,14 @@ http://www.vim.org/scripts/script.php?script_id=1641
 If you like the 'desert' colorscheme, but you really want comments to be red and functions to be blue, previously you would copy the entire colorscheme into your home directory and customize it.  With this plugin installed, you can create a small script to change just the parts you want for that colorscheme, exactly how you would for an ftplugin or syntax script:
 
 For unix systems you would create:
-  ~/.vim/after/colors/desert.vim:
+
+    # ~/.vim/after/colors/desert.vim:
     highlight Comment guifg=Red ctermfg=Red
     highlight Function guifg=Blue ctermfg=Blue
 
 On windows you would create:
- C:\Documents and Settings\Peter\vimfiles\after\colors\desert.vim:
+
+    # C:\Documents and Settings\Peter\vimfiles\after\colors\desert.vim:
     highlight Comment guifg=Red ctermfg=Red
     highlight Function guifg=Blue ctermfg=Blue
 
