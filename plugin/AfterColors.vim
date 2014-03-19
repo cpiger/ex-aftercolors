@@ -31,31 +31,31 @@
 " 	6 - vimfiles/after_colors/myColorsName.vim
 
 " requires vim 6 at least
-if version <= 600 || exists('loaded_AfterColors') || ! has("autocmd")
+if version <= 600 || exists('g:loaded_aftercolors') || ! has("autocmd")
 	finish
 endif
 
-let g:loaded_AfterColors = 1
+let g:loaded_aftercolors = 1
 
 " provide ability for an 'after/colors' file using autocommands
-augroup AfterColorsPlugin
+augroup ex_aftercolors
 	autocmd!
 
 	" source the 'after' colors scripts only after vim has finished everything
 	" else, because there are many things which will reset the colors
 	if exists('##VimEnter')
-		autocmd VimEnter * call <SID>AfterColorsScript()
+		autocmd VimEnter * call <SID>after_colors_script()
 	endif
 
 	" if this vim has the 'Colorscheme' event, we can hook onto it to ensure
 	" that the 'after' colors are reloaded when the colorscheme is changed
 	if exists('##ColorScheme')
-		autocmd ColorScheme * call <SID>AfterColorsScript()
+		autocmd ColorScheme * call <SID>after_colors_script()
 	endif
 
 augroup end
 
-function! <SID>AfterColorsScript()
+function! s:after_colors_script()
 	if exists('g:colors_name') && strlen(g:colors_name)
 		" allow two places to store after/colors scripts
 		execute 'runtime! after/colors/' . g:colors_name . '.vim'
@@ -64,3 +64,5 @@ function! <SID>AfterColorsScript()
 		execute 'runtime! after/colors/common.vim'
 	endif
 endfunction
+
+" vim:ts=4:sw=4:sts=4 et fdm=marker:
