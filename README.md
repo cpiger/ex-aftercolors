@@ -1,7 +1,7 @@
 # Intro
 
 Allows you to create an after/colors/ script for customizing any colorscheme.
-This is a bug fixes version for original vim-script AfterColors at 
+This is a bug fixes version for original vim-script AfterColors at
 http://www.vim.org/scripts/script.php?script_id=1641
 
 **EXAMPLE**
@@ -27,16 +27,16 @@ On windows you would create:
 
 **VERSION 6 WARNING**
 
-If your Vim is older than version 7, then the after/colors scripts will only be loaded 
-once when Vim starts.  This will not be a problem if you choose your colorscheme in your 
-.vimrc file, but if you change your colorscheme after vim has loaded then your after/colors 
+If your Vim is older than version 7, then the after/colors scripts will only be loaded
+once when Vim starts.  This will not be a problem if you choose your colorscheme in your
+.vimrc file, but if you change your colorscheme after vim has loaded then your after/colors
 scripts will be ignored.  This is not an issue in Vim 7.
 
 ## Installation
 
-This plugin follows the standard runtime path structure, and as such it can 
+This plugin follows the standard runtime path structure, and as such it can
 be installed with a variety of plugin managers:
-    
+
 To install using [Vundle](https://github.com/gmarik/vundle):
 
     # add this line to your .vimrc file

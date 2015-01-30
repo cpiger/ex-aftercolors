@@ -1,11 +1,11 @@
-" Vim Plugin: AfterColors.vim: 
+" Vim Plugin: AfterColors.vim:
 " Provides: Automatic sourcing of after/colors/ scripts.
 " Author: Peter Hodge <toomuchphp-vim@yahoo.com>
 " URL: http://www.vim.org/scripts/script.php?script_id=1641
 " Version: 1.3
 " Last Update: May 13, 2008
 " Requires: Vim 6 or later (preferably 7) with autocommand support
-" 
+"
 "
 " Minor Bug: if you just add your 'after/colors' scripts to
 " 'vimfiles/after/colors/myColorsName.vim', when you go to
